@@ -7,8 +7,8 @@ module.exports = (app, sendMail) => {
   app.use(bodyParser.json())
 
   const api = express()
-  Api.init(api)
-  app.use('/doc', api)
+  Api(api)
+  app.use('/:doc', api)
 
   function _generalErrorHandler (err, req, res, next) {
     res.status(err.status || 400).send(err.message || err)

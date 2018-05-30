@@ -3,7 +3,6 @@ const express = require('express')
 const cors = require('cors')
 const port = process.env.PORT || 3000
 const App = require('./app')
-const db = require('./db')
 
 function sendMail (mail) {
   return new Promise((resolve, reject) => {
@@ -22,12 +21,6 @@ const opts = {
 }
 app.use(cors(opts))
 
-db.migrate.latest()
-.then(() => {
-  App(app, sendMail).listen(port, () => {
-    console.log('gandalf do magic on ' + port)
-  })
-})
-.catch(err => {
-  console.log(err)
+App(app, sendMail).listen(port, () => {
+  console.log('gandalf do magic on ' + port)
 })

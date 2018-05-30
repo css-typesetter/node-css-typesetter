@@ -10,6 +10,5 @@
   "obsah4": "o4",
   "obsah5": "o5",
   "obsah6": "o6",
-  "extrascripts": ["js/fontawesome.js"],
-  "extrasstyle": ["style/bootstrap.min.css"]
+  "extrasstyle": ["static/bootstrap.min.css"]
 }
