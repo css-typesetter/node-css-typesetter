@@ -1,0 +1,39 @@
+{
+  "name": "node-css-typesetter",
+  "version": "0.0.1",
+  "description": "backend for typesetting application",
+  "main": "server.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node server.js",
+    "startdebug": "node --inspect-brk server.js",
+    "precommit": "npm test",
+    "testdebug": "./node_modules/.bin/mocha --inspect-brk --compilers coffee:coffee-script/register --timeout 5000 test"
+  },
+  "keywords": [
+    "typesetting",
+    "css",
+    "html"
+  ],
+  "repository": "https://github.com/vencax/node-css-typesetter",
+  "author": "Vaclav Klecanda <vencax77@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "handlebars": "^4.0.11",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "husky": "^0.11.9",
+    "jsonwebtoken": "^7.4.3",
+    "mocha": "^3.5.0",
+    "sqlite3": "^3.1.8",
+    "standard": "^10.0.3"
+  }
+}

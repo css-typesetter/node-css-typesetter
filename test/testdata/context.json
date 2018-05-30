@@ -1,0 +1,15 @@
+{
+  "web": "tabor.pirati.cz",
+  "clanek1nadpis": "pokus jak svine",
+  "clanek1": "fsahofjsioafjosa",
+  "p1right": "dfsfds",
+  "p1rightd": "aaa",
+  "obsah1": "o1",
+  "obsah2": "o2",
+  "obsah3": "o3",
+  "obsah4": "o4",
+  "obsah5": "o5",
+  "obsah6": "o6",
+  "extrascripts": ["js/fontawesome.js"],
+  "extrasstyle": ["style/bootstrap.min.css"]
+}
