@@ -8,9 +8,12 @@ module.exports = (app, sendMail) => {
 
   const api = express()
   Api(api)
-  app.use('/:doc', api)
+  app.use(api)
 
   function _generalErrorHandler (err, req, res, next) {
+    if (err.code === 'ENOENT') {
+      return res.status(404).send('nothing here')
+    }
     res.status(err.status || 400).send(err.message || err)
     if (process.env.NODE_ENV !== 'production') {
       console.log('---------------------------------------------------------')

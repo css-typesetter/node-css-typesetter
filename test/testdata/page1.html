@@ -1,5 +1,5 @@
 
-<div class="row">
+<div class="row" style="height: 1cm;">
   <div class="col-2 item odd">{{PART obsah1}} <span class="page">(str.2)</span></div>
   <div class="col-2 item">{{PART obsah2}} <span class="page">(str.2)</span></div>
   <div class="col-2 item odd"> {{PART obsah3}} <span class="page">(str.2)</span></div>
@@ -8,33 +8,32 @@
   <div class="col-2 item">{{PART obsah6}} <span class="page">(str.2)</span></div>
 </div>
 
-<div style="position: relative">
+<div style="position: relative; height: 3cm;">
   <img src="logo.svg" style="width: 3cm;" />
   <div id="nadpisdiv" style="position: absolute; left: 3cm; width: 10.6cm; top: 0;">
     <div id="nadpis">PIRÁTSKÉ LISTY</div>
-    <div id="podnadpisem">Léto 2018 ǀ piratskelisty.cz ǀ <span id='web'></span> ǀ Neprodejné</div>
-    {{PART web}}
+    <div id="podnadpisem">Léto 2018 ǀ piratskelisty.cz ǀ {{PART web}} ǀ Neprodejné</div>
   </div>
   <div style="position: absolute; left: 13.7cm; top: 0; border-left: 3px solid black; height: 100%; padding: .2cm;">
     Nevim co sem, treba nejaky odkaz na osmismerku na konci novin ;)
   </div>
 </div>
 
-<div style="position: relative; height: 21cm; overflow: hidden;">
+<div class="row" style="height: 22.7cm; overflow: hidden;">
 
-  <div style="position: absolute; width: 15cm;">
-    <h1 id="pusttenasnane" class="dark" style="text-align: center; padding: .2cm; margin: 0;">
+  <div class="col-10">
+    <h1 style="background-color: #444; text-align: center; padding: .2cm; margin: 0;">
       PUSŤTE NÁS NA NĚ! POPEREME SE ZA VÁS
     </h1>
 
-    <img style="width: 15cm;"
+    <img style="width: 100%;"
       src="https://tabor.pirati.cz/static/media/futurecity.jpg" />
 
     <h1 style="padding: .2cm 0; margin: 0;">{{PART clanek1nadpis}}</h1>
 
     <div style="position: relative;">
 
-      <div class="regular" style="position: absolute; width: 12.7cm; top: 0; columns: 3;">
+      <div class="regular" style="columns: 4;">
         {{PART clanek1}}
       </div>
 
@@ -42,7 +41,7 @@
 
   </div>
 
-  <div style="position: absolute; right: 0; width: 5cm;">
+  <div class="col-2">
     <div class="regular" id="p1right" style="padding: 0 .2cm;">
       {{PART p1right}}
     </div>
@@ -54,6 +53,6 @@
 
 </div>
 
-<div class="dark" style="text-align: center; padding: .2cm">
+<div class="dark" style="text-align: center; padding: .2cm; height: 2cm;">
   TY KONТROLUJEŠ MĚSTO. NE ONO TEBE.
 </div>
