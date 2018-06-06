@@ -1,6 +1,6 @@
 # Node CSS typesetter
 
-Backend server for [css-typesetter-webclient](/css-typesetter/css-typesetter-webclient) - tool
+Backend server for [css-typesetter-webclient](https://github.com/css-typesetter/css-typesetter-webclient) - tool
 for building paged documents typeset by CSS and HTML.
 
 CSS allows typesetting since [page module](http://www.w3.org/TR/css3-page/).
@@ -13,8 +13,8 @@ This project aims to allow user to work online (in browser) without any aditiona
 ## configuration
 
 [dotenv](https://www.npmjs.com/package/dotenv) reads config file and setup following envvars:
-- HOSTURL:
-- DATAFOLDER:
+- HOSTURL: __mandatory__ public url of this API endpoint rendering full document
+- DATAFOLDER: __mandatory__ folder containing particular documents (writable folder)
 - PORT: port to listen (default 3000)
 
 ### install chrome in headless debian based server
