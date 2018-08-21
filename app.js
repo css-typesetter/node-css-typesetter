@@ -4,7 +4,7 @@ const Api = require('./lib/api')
 
 module.exports = (app, sendMail) => {
   // JSON body parser for parsing incoming data
-  app.use(bodyParser.json())
+  app.use(bodyParser.json({limit: '10mb'}))
 
   const api = express()
   Api(api)
